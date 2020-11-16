@@ -44,6 +44,7 @@ def winner(board)
     elsif piece == "O"
       "O"
     end
+  end
   #this is referencing the index/integer but we want it to connect to the board's letter
   #input that argument into board to retrieve "X" "O" or nil
 
