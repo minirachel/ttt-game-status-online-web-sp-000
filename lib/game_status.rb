@@ -39,7 +39,8 @@ end
 
 def winner(board)
   if won?(board)
-    puts "#{won?(board)[0]}" 
+    puts "#{won?(board)[0]}"
+  end
   #this is referencing the index/integer but we want it to connect to the board's letter
   #input that argument into board to retrieve "X" "O" or nil
 
