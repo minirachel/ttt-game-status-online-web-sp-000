@@ -26,7 +26,7 @@ end
 
 
 def full?(board)
-  board.all? {|spot| position_taken?(board, spot).true? }
+  board.all? {|spot| position_taken?(board, spot).true?}
   #true for a draw
   #false if in-progress game
 end
