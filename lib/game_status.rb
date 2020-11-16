@@ -36,5 +36,8 @@ end
 def over?(board)
   full?(board) || won?(board)
 end
-#over?
-#winner
+
+def winner(board)
+  if won?(board)
+    win_combination[0]
+end
