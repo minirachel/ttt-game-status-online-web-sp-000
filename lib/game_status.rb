@@ -39,7 +39,7 @@ end
 
 def winner(board)
   board(won?(board)[0])
-  #this is referencing the index 
+  #this is referencing the index
 #get won?(board)
   #pull won?(board)[0]
   #input that argument into board to retrieve "X" "O" or nil
