@@ -21,8 +21,8 @@ WIN_COMBINATIONS = [
 def won?(board)
     WIN_COMBINATIONS.detect {|win_combination| board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] == board[win_combination[2]] && position_taken?(board, win_combination[0])}
 end
-
-
+##finding and returning the first result from the nested array of WIN_COMBINATIONS where the board() index equivalent of nested array index 0 == 1 == 2 AND the position is taken for board(win_combination[0])
+## I may have to expand the position taken argument
 
 
 
