@@ -38,9 +38,12 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    puts "#{won?(board)[0]}"
-  end
+  won?(board).detect do |piece|
+    if piece == "X"
+      "X"
+    elsif piece == "O"
+      "O"
+    end
   #this is referencing the index/integer but we want it to connect to the board's letter
   #input that argument into board to retrieve "X" "O" or nil
 
