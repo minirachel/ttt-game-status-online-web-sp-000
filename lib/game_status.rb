@@ -38,6 +38,7 @@ def over?(board)
 end
 
 def winner(board)
+  binding.pry
   if won?(board)
     return win_combination[0]
   end
