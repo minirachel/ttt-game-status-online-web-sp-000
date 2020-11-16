@@ -38,6 +38,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).detect {|piece| board[piece[0]]}
+  board.detect {|piece| won?(board) ? "#{board[piece[0]]}" : "no winner"}
   #I want to know which string correlates with [0] of won?(board)'s output array
 end
