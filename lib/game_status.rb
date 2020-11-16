@@ -25,11 +25,6 @@ end
 
 
 
-###     WIN_COMBINATIONS.map {|win_combination| win_combination.find_all { |win_index| win_combination == [win_index[0], win_index[1], win_index[2]] } }
-
-###I'm missing how to check back into WIN_COMBINATIONS
-
-
 
   #### if board(win_index).
   ####  ^load value of the board position X or O
