@@ -38,6 +38,13 @@ def over?(board)
 end
 
 def winner(board)
-  board.detect {|piece| won?(board) == piece[0]}
+  won?(board)[0]
+#get won?(board)
+  #pull won?(board)[0]
+  #input that argument into board to retrieve "X" "O" or nil
+
+#detect will just pull the index from array
+
+
   #I want to know which string correlates with [0] of won?(board)'s output array
 end
