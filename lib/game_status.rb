@@ -21,20 +21,33 @@ WIN_COMBINATIONS = [
 def won?(board)
     WIN_COMBINATIONS.detect {|win_combination| board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] == board[win_combination[2]] && position_taken?(board, win_combination[0])}
 end
+  ##finding and returning the first result from the nested array of WIN_COMBINATIONS where the board() index equivalent of nested array index 0 == 1 == 2 AND the position is taken for board(win_combination[0])
+  ## I may have to expand the position taken argument
 
 
+def full?(board)
+  board.all? {|spot| spot == "X" || spot == "O"}
+end
+
+def draw?(board)
+  !won?(board) && full?(board)
+end
+
+def over?(board)
+  full?(board) || won?(board)
+end
+
+def winner(board)
+  if won?(board)
+    board[won?(board)[0]]
+  else
+    puts "no winner!"
+  end
+  #this is referencing the index/integer but we want it to connect to the board's letter
+  #input that argument into board to retrieve "X" "O" or nil
+
+#detect will just pull the index from array
 
 
-###     WIN_COMBINATIONS.map {|win_combination| win_combination.find_all { |win_index| win_combination == [win_index[0], win_index[1], win_index[2]] } }
-
-###I'm missing how to check back into WIN_COMBINATIONS
-
-
-
-  #### if board(win_index).
-  ####  ^load value of the board position X or O
-
-#full?
-#draw?
-#over?
-#winner
+  #I want to know which string correlates with [0] of won?(board)'s output array
+end
