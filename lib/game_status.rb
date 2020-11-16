@@ -38,10 +38,9 @@ def over?(board)
 end
 
 def winner(board)
-  board(won?(board)[0])
-  #this is referencing the index
-#get won?(board)
-  #pull won?(board)[0]
+  if won?(board)
+    puts "#{won?(board)[0]}" 
+  #this is referencing the index/integer but we want it to connect to the board's letter
   #input that argument into board to retrieve "X" "O" or nil
 
 #detect will just pull the index from array
