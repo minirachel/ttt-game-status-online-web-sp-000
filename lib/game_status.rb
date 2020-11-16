@@ -39,6 +39,5 @@ end
 
 def winner(board)
   if won?(board)
-    puts "#{win_combination[0]}"
-  end
+    return win_combination[0]
 end
