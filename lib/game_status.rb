@@ -27,11 +27,11 @@ end
 
 def full?(board)
   board.all? {|spot| spot == "X" || spot == "O"}
-  #true for a draw
-  #false if in-progress game
 end
 
+def draw?(board)
+  !won?(board) && full?(board)
+end
 
-#draw?
 #over?
 #winner
