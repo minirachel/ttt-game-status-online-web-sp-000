@@ -41,7 +41,7 @@ def winner(board)
   if won?(board)
     board[won?(board)[0]]
   else
-    false
+    puts "no winner!"
   end
   #this is referencing the index/integer but we want it to connect to the board's letter
   #input that argument into board to retrieve "X" "O" or nil
