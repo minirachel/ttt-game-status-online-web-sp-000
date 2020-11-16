@@ -38,7 +38,6 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return won?(board)[0]
-  end
+  won?(board)
+  #I want to know which string is in [0] of won?(board)'s output array
 end
